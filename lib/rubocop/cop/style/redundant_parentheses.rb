@@ -131,10 +131,10 @@ module RuboCop
         def disallowed_literal?(begin_node, node)
           node.literal? &&
             !ALLOWED_LITERALS.include?(node.type) &&
-            !powered_negative_numeric?(begin_node, node)
+            !raised_to_power_negative_numeric?(begin_node, node)
         end
 
-        def powered_negative_numeric?(begin_node, node)
+        def raised_to_power_negative_numeric?(begin_node, node)
           return false unless node.int_type? || node.float_type?
           return false if node.children.first >= 0 || begin_node.parent.nil?
 
