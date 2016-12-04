@@ -14,7 +14,7 @@
 
 * [#3751](https://github.com/bbatsov/rubocop/pull/3751): Avoid crash in `Rails/EnumUniqueness` cop. ([@pocke][])
 * [#3766](https://github.com/bbatsov/rubocop/pull/3766): Avoid crash in `Style/ConditionalAssignment` cop with masgn. ([@pocke][])
-* [#xxxx](https://github.com/bbatsov/rubocop/pull/xxxx): `Style/RedundantParentheses` Don't flag negative numeric raised to a power literals, since removing the parentheses would change the meaning of the expressions. ([@amogil][])
+* [#xxxx](https://github.com/bbatsov/rubocop/pull/xxxx): `Style/RedundantParentheses` Don't flag raised to a power negative numeric literals, since removing the parentheses would change the meaning of the expressions. ([@amogil][])
 
 ## 0.46.0 (2016-11-30)
 
